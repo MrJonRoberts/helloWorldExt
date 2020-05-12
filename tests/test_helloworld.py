@@ -4,7 +4,7 @@
 from unittest import TestCase
 from unittest.mock import patch
 
-from helloworld import do_hello, URL
+from helloworld.helloworld import do_hello, URL
 
 class FakeResult:
     text = '<title>"Hello, World!" program - Wikipedia via Test</title>'
@@ -17,8 +17,4 @@ class TestHelloWorld(TestCase):
 
         do_hello()
         mock_get.assert_called_with(URL)
-
-if __name__ == '__main__':
-    from unittest import main
-    main()
 

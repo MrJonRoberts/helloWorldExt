@@ -2,3 +2,4 @@
 # subset, see setup.py for that list
 pudb==2019.2
 requests==2.22.0
+coverage
